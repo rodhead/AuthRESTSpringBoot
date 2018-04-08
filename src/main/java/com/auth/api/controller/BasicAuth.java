@@ -1,4 +1,4 @@
-/*package com.auth.api.controller;
+package com.auth.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -8,12 +8,14 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.AuthenticationEntryPoint;
 
+import com.auth.api.RestApiAuth.AuthenticationEntryPointImpl;
+
 @Configuration
 @EnableWebSecurity
 public class BasicAuth extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	private AuthenticationEntryPoint authEntryPoint;
+	private AuthenticationEntryPointImpl authEntryPoint;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -25,8 +27,7 @@ public class BasicAuth extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("misbah").password("password").roles("USER");
+		auth.inMemoryAuthentication().withUser("root").password("mishu3d123").roles("USER");
 	}
 	
 }
-*/
