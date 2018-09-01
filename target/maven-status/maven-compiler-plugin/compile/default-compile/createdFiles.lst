@@ -1,2 +1,7 @@
+com\auth\api\model\AccountDetails.class
 com\auth\api\RestApiAuth\App.class
 com\auth\api\controller\ControllerWorld.class
+com\auth\api\controller\BasicAuth.class
+com\auth\api\RestApiAuth\AuthenticationEntryPointImpl.class
+com\auth\api\dao\FetchAccount.class
+com\auth\api\util\HiberConnection.class

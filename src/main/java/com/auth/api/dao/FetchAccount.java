@@ -125,6 +125,11 @@ public class FetchAccount {
 		}
 		return id;
 	}
+
+	public String validateName(String name, int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

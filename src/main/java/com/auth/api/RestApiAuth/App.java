@@ -8,7 +8,9 @@ import org.hibernate.service.ServiceRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.client.RestTemplate;
 
 import com.auth.api.util.HiberConnection;
 
@@ -31,7 +33,10 @@ public class App
        
     }
     
-    
+    @Bean
+    public RestTemplate rest() {
+    	return new RestTemplate();
+    }
 
 	
 	
